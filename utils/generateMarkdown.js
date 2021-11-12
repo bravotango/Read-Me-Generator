@@ -67,11 +67,11 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.projectTitle}
+  return `# ${data.title}
 
   ## Description
   
-  ${data.projectDescription}
+  ${data.description}
   
   ## Table of Contents (Optional)
   
@@ -84,29 +84,32 @@ function generateMarkdown(data) {
 
   ## Installation
   
-  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-  
+  ${data.installation}
+
   ## Usage
   
-  Provide instructions and examples for use.
+  ${data.usage}
   
   ## License
   
   ${renderLicenseSection(data.license)}
-  
-  The last section of a high-quality README file is the license.
-  
-  🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+
+  This material licensed under the ${
+    data.license
+  }. All rights not explicitly granted in the ${data.license} are reserved.
   
   ## Contributing
   
-  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-  
+  ${data.contributions}
+
   ## Tests
   
-  Go the extra mile and write tests for your application. Then provide
+  ${data.tests}
   
   ## Questions
+
+  ${data.gitHubUserName}
+  ${data.email}
 
 `;
 }
