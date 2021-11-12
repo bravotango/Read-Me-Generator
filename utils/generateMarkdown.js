@@ -54,15 +54,22 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  console.log("license", license);
   if (renderLicenseBadge(license) && renderLicenseLink(license)) {
-    console.log("about to return");
     return `[![License: ${license}](${renderLicenseBadge(
       license
     )})](${renderLicenseLink(license)})`;
   }
-
   return "";
+}
+
+function renderContributors(contributors) {
+  const contributorsArr = contributors.split(",");
+  const gitHubAccounts = contributorsArr.map((contributor) => {
+    contributor = contributor.trim();
+    return `[https://github.com/${contributor}](https://github.com/${contributor})<br/>`;
+  });
+  console.log(gitHubAccounts);
+  return gitHubAccounts.join("");
 }
 
 // TODO: Create a function to generate markdown for README
@@ -79,7 +86,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#contributing)
+  - [Tests](#tests)
   - [Questions](#questions)
 
   ## Installation
@@ -94,23 +101,29 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
 
-  This material licensed under the ${
+  This material licensed under the "${
     data.license
-  }. All rights not explicitly granted in the ${data.license} are reserved.
+  }". All rights not explicitly granted in the "${data.license}" are reserved.
   
   ## Contributing
   
-  ${data.contributions}
+  Author's gitHub profiles:
+  
+  ${renderContributors(data.contributing)}
 
   ## Tests
-  
+
   ${data.tests}
   
   ## Questions
 
-  ${data.gitHubUserName}
-  ${data.email}
+  Repository owner:
+  [https://github.com/${data.gitHubUserName}](https://github.com/${
+    data.gitHubUserName
+  })
 
+  Repository email: 
+  <a href="mailto:${data.email}">${data.email}</a>
 `;
 }
 module.exports = generateMarkdown;
