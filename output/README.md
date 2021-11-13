@@ -1,8 +1,8 @@
-# dsaf
+# The standard Lorem Ipsum passage
 
   ## Description
   
-  af
+  This lorem lipsum project's purpose is to sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
   
   ## Table of Contents (Optional)
   
@@ -15,17 +15,17 @@
 
   ## Installation
   
-  fads
+  This lorem lipsum project's purpose is to sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
 
   ## Usage
   
-  adf
+  This lorem lipsum project's purpose is to sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
   
   ## License
   
-  [![License: Apache 2.0 License](https://img.shields.io/badge/s-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: The MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  This material licensed under the "Apache 2.0 License". All rights not explicitly granted in the "Apache 2.0 License" are reserved.
+  This material licensed under the "The MIT License". All rights not explicitly granted in the "The MIT License" are reserved.
   
   ## Contributing
   
@@ -35,12 +35,12 @@
 
   ## Tests
 
-  asdf
+  This lorem lipsum project's purpose is to sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
   
   ## Questions
 
   Repository owner:
-  [https://github.com/asdf](https://github.com/asdf)
+  [https://github.com/bravotango](https://github.com/bravotango)
 
   Repository email: 
-  <a href="mailto:asdf">asdf</a>
+  <a href="mailto:seattleriot@hotmail.com">seattleriot@hotmail.com</a>
