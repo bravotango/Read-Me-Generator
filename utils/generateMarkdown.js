@@ -68,7 +68,6 @@ function renderContributors(contributors) {
     contributor = contributor.trim();
     return `[https://github.com/${contributor}](https://github.com/${contributor})<br/>`;
   });
-  console.log(gitHubAccounts);
   return gitHubAccounts.join("");
 }
 
@@ -80,7 +79,7 @@ function generateMarkdown(data) {
   
   ${data.description}
   
-  ## Table of Contents (Optional)
+  ## Table of Contents
   
   - [Installation](#installation)
   - [Usage](#usage)
