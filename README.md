@@ -14,6 +14,14 @@ The application will be invoked by using the following command:
 node index.js
 ```
 
+## After invoking the application, the questions start:
+
+<img src="./readme/node.png" alt="getting started" width="700"/>
+
+## Screenshot of example output after answering all questions:
+
+![example README.md](./readme/createdReadMe.png)
+
 ## Satisfied User Story
 
 ```
